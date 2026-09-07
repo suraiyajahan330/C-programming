@@ -1,23 +1,21 @@
 #include<stdio.h>
 
 int main() {
-   int num;
-   int rev = 0;
+int num;
 
-   printf("Enter a number: ");
-   scanf("%d", &num);
-   int original = num;
-   
-   while ( num > 0) {
-    int digit = num % 10;
-    rev = rev * 10 + digit;
-    num = num / 10;
-   }
-   if (rev == original ) {
-    printf("Palindrome Number\n");
-    
-   } else {
-    printf("Not Palindrom \n");
-   }
-   return 0;
+printf("Enter a Number: ");
+scanf("%d", &num);
+
+if (num % 2 == 0){
+    printf("Even Number\n");
+} else {
+    printf("Odd Number\n");
+}
+ if (num > 0){
+    printf("Positive Number\n");
+
+} else {
+    printf("Negative Number\n");
+}
+return 0;
 }
